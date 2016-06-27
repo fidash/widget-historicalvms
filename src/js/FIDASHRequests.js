@@ -1,3 +1,10 @@
+/*
+ * FIDASHRequests.js
+ *
+ * Copyright (c) 2016 Rock Neurotiko
+ * Licensed under the BeerWare license.
+ */
+
 /*exported FIDASHRequests*/
 var FIDASHRequests = (function () {
     "use strict";

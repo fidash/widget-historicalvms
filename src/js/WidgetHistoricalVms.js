@@ -2,10 +2,10 @@
 
 /*
  * widget-historicalvms
- * https://github.com/rockneurotiko/widget-historicalvms
+ * https://github.com/fidash/widget-historicalvms
  *
  * Copyright (c) 2016 CoNWeT
- * Licensed under the MIT license.
+ * Licensed under the Apache-2.0 license.
  */
 
 /* exported WidgetHistoricalVms */
