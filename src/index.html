@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <meta content="charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="lib/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" type="text/css" href="lib/css/bootstrap-switch.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="lib/css/style.css">
+    <link rel="stylesheet" type="text/css" href="lib/css/export.css">
+    <title>Empty widget-historicalregions widget</title>
+  </head>
+  <body>
+
+
+    <div id="wizard">
+
+      <div class="step" data-step-title="Multi view">
+        <div class="container">
+          <div class="header">
+            <div class="selects">
+              <select class="form-control selectpicker" id="region_selector" multiple data-selected-text-format="count" data-role="none" name="region" title="Loading regions" data-count-selected-text="{0} regions" disabled></select>
+            </div>
+            <button id="nextStep" class="button" type="button" style="background-color: #008CBA; display: inline-block; float: right;">Next</button>
+          </div>
+          <div class="content">
+            <div id="multiview" class="noselect"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="step" data-step-title="Single view">
+        <div class="container">
+          <div class="header">
+            <button id="previousStep" class="button" type="button" style="float: left; background-color: #008CBA; display: inline-block;">Previous</button>
+
+            <div id="switch-region" class="container-fluid switch-container">
+              <div id="multiswitch" class="switch-item" style="text-align: center; width: 135px; height: 20px;">
+                <input type="checkbox" name="select-charts-region" data-size="mini" data-handle-width="35" data-label-width="10" data-on-text="Multi" data-off-text="Single" checked />
+                <!-- <i id="vcpusort" class="sort fa fa-fw fa-sort"></i> -->
+              </div>
+
+              <div id="limitswitch" class="switch-item" style="text-align: center; width: 145px; height: 20px;">
+                <input type="checkbox" name="select-charts-region" data-size="mini" data-handle-width="40" data-label-width="10" data-on-text="No limit" data-off-text="Limit" checked />
+                <!-- <i id="vcpusort" class="sort fa fa-fw fa-sort"></i> -->
+              </div>
+            </div>
+
+            <!-- <div class="onoffswitch"> -->
+            <!--   <input type="checkbox" name="multiswitch" class="onoffswitch-checkbox" id="multiswitch" checked> -->
+            <!--   <label class="onoffswitch-label" for="multiswitch"> -->
+            <!--     <span class="onoffswitch-inner onoffswitchmulti"></span> -->
+            <!--     <span class="onoffswitch-switch"></span> -->
+            <!--   </label> -->
+            <!-- </div> -->
+
+            <!-- <div class="onoffswitch"> -->
+            <!--   <input type="checkbox" name="limitswitch" class="onoffswitch-checkbox" id="limitswitch" checked> -->
+            <!--   <label class="onoffswitch-label" for="limitswitch"> -->
+            <!--     <span class="onoffswitch-inner onoffswitchlimits"></span> -->
+            <!--     <span class="onoffswitch-switch"></span> -->
+            <!--   </label> -->
+            <!-- </div> -->
+
+          </div>
+          <div class="content">
+            <div id="singleview" class="noselect"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="lib/js/jquery.min.js"></script>
+    <script src="lib/js/jquery.easyWizard.js"></script>
+
+    <script src="lib/js/bootstrap.min.js"></script>
+    <script src="lib/js/bootstrap-select.min.js"></script>
+    <script src="lib/js/bootstrap-switch.min.js"></script>
+
+    <script src="lib/js/amcharts.js"></script>
+    <script src="lib/js/serial.js"></script>
+    <script src="lib/js/dark.js"></script>
+    <script src="lib/js/light.js"></script>
+    <script src="lib/js/amstock.js"></script>
+
+    <script src="lib/js/plugins/export/export.min.js"></script>
+
+    <script src="lib/js/d3.min.js"></script>
+    <script src="lib/js/horizon.js"></script>
+    <script src="lib/js/cubism.v1.min.js"></script>
+
+    <script src="js/FIDASHRequests.js"></script>
+    <script src="js/WidgetHistoricalVms.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

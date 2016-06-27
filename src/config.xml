@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget xmlns="http://wirecloud.conwet.fi.upm.es/ns/macdescription/1" vendor="CoNWeT" name="widget-historicalvms" version="0.1.0">
+  <details>
+    <title>Historical VMs</title>
+    <homepage>https://github.com/fidash/widget-historicalvms</homepage>
+    <authors>Miguel Garcia</authors>
+    <email>mgarcia@conwet.com</email>
+    <image></image>
+    <smartphoneimage></smartphoneimage>
+    <description>The best project ever.</description>
+    <longdescription>DESCRIPTION.md</longdescription>
+    <changelog>doc/changelog.md</changelog>
+    <doc>doc/index.md</doc>
+    <license>Apache-2.0</license>
+    <issuetracker>https://github.com/fidash/widget-historicalvms/issues</issuetracker>
+  </details>
+
+  <requirements>
+
+  </requirements>
+
+  <preferences>
+  </preferences>
+  <wiring>
+    <!-- <inputendpoint name="authentication" type="text" label="Authentication" description="Receive the authentication data via wiring" friendcode="openstack-auth"/> -->
+    <inputendpoint name="regions" type="text" label="Regions" description="Receive regions selected" friendcode="regions"/>
+  </wiring>
+  <persistentvariables>
+    <variable name="regionSelected" type="text" label="Regions Selected" description="" />
+    <variable name="limit" type="text" label="Limit" description="" />
+    <variable name="multi" type="text" label="Multi" description="" />
+
+    <variable name="closed" type="text" label="Navbar closed" description="" />
+  </persistentvariables>
+
+  <contents src="index.html"/>
+  <rendering height="47" width="10"/>
+</widget>

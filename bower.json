@@ -1,0 +1,64 @@
+{
+    "name": "widget-historicalvms",
+    "dependencies": {
+        "jquery": null,
+        "cubism": "~1.6.0",
+        "d3": "~3.5.16",
+        "amstock3": "~3.20.3",
+        "jquery.easywizard": "~1.1.4",
+        "bootstrap": "~3.3.6",
+        "bootstrap-select": "~1.10.0",
+        "bootstrap-switch": "~3.3.2"
+    },
+    "devDependencies": {},
+    "exportsOverride": {
+        "bootstrap": {
+            "css": "dist/css/bootstrap.min.css",
+            "js": "dist/js/bootstrap.min.js",
+            "fonts": "dist/fonts/glyphicons-halflings-regular.woff"
+        },
+        "bootstrap-select": {
+            "css": "dist/css/bootstrap-select.min.css",
+            "js": "dist/js/bootstrap-select.min.js"
+        },
+        "bootstrap-switch": {
+            "js": "dist/js/bootstrap-switch.min.js",
+            "css": "dist/css/bootstrap3/bootstrap-switch.min.css"
+        },
+        "jquery": {
+            "js": "dist/jquery.min.js"
+        },
+        "cubism": {
+            "js": "cubism.v1.min.js"
+        },
+        "d3": {
+            "js": "d3.min.js"
+        },
+        "amstock3": {
+            "js": [
+                "amcharts/amcharts.js",
+                "amcharts/serial.js",
+                "amcharts/amstock.js"
+            ],
+            "js/themes": [
+                "amcharts/themes/dark.js",
+                "amcharts/themes/light.js"
+            ],
+            "js/plugins/export": "amcharts/plugins/export/export.min.js",
+            "js/plugins/export/shapes": "amcharts/plugins/export/shapes/*.svg",
+            "js/plugins/export/libs/FileSaver.js": "amcharts/plugins/export/libs/FileSaver.js/FileSaver.js",
+            "js/plugins/export/libs/fabric.js": "amcharts/plugins/export/libs/fabric.js/fabric.js",
+            "js/plugins/export/libs/pdfmake": [
+                "amcharts/plugins/export/libs/pdfmake/pdfmake.js",
+                "amcharts/plugins/export/libs/pdfmake/vfs_fonts.js"
+            ],
+            "js/plugins/export/libs/jszip": "amcharts/plugins/export/libs/jszip/jszip.js",
+            "js/plugins/export/libs/xlsx": "amcharts/plugins/export/libs/xlsx/xlsx.js",
+            "js/images": "amcharts/images/*",
+            "css": [
+                "amcharts/style.css",
+                "amcharts/plugins/export/export.css"
+            ]
+        }
+    }
+}
